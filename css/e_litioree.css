@@ -147,12 +147,12 @@ section.about-event {
 	margin-top: 2rem;
 }
 
-div.container .hidden {
+div.container.hidden {
 	transform: translateY(100%);
     filter: blur(10px);
 }
 
-div.container .show {
+div.container.show {
 	transform: translateY(0);
     filter: blur(0);
     transition: all 0.7s ease-in-out;
@@ -166,6 +166,17 @@ h1.heading {
 h1.heading#activities {
     display: flex;
     justify-content: center;
+}
+
+h1.heading.hidden {
+    transform: translateY(100%);
+    filter: blur(10px);
+}
+
+h1.heading.show {
+    transform: translateY(0);
+    filter: blur(0);
+    transition: all 0.7s ease-in-out;
 }
 
 section.about-event p {
@@ -186,7 +197,7 @@ section.activities{
     justify-content: center;
 }
 
-div.activities-animation.hidden{
+/* div.activities-animation.hidden{
     transform: translateY(100%);
     filter: blur(10px);
 }
@@ -196,19 +207,7 @@ div.activities-animation.show {
 	transform: translateY(0);
     filter: blur(0);
     transition: all 1s ease-in-out;
-}
-
-div.performance-animation.hidden{
-    transform: translateY(100%);
-    filter: blur(10px);
-}
-
-
-div.performance-animation.show {
-	transform: translateY(0);
-    filter: blur(0);
-    transition: all 1s ease-in-out;
-}
+} */
 
 div.card-container {
     margin-top: 3rem;
@@ -219,6 +218,17 @@ div.card-container {
     flex-wrap: wrap;
     gap: 4rem;
     /* background-color: salmon; */
+}
+
+div.box.hidden{
+    transform: translateY(100%);
+    filter: blur(10px);
+}
+
+div.box.show {
+    transform: translateY(0);
+    filter: blur(0);
+    transition: all 1s ease-in-out;
 }
 
 div.box{
@@ -349,4 +359,5 @@ footer .copyright {
         text-wrap: wrap;
         font-size: 1rem;
     }
+    
 }
